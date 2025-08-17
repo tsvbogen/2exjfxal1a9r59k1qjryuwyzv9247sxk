@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -84,12 +84,10 @@
         const audioPlayer = document.getElementById('audioPlayer');
         const startButton = document.getElementById('startButton');
 
-        window.addEventListener('load', () => {
+        startButton.addEventListener('click', () => {
             audioPlayer.volume = 0.10;
             audioPlayer.play();
-        });
 
-        startButton.addEventListener('click', () => {
             audioPlayer.pause();
             audioPlayer.currentTime = 0;
 
@@ -102,7 +100,6 @@
         videoPlayer.addEventListener('ended', () => {
             location.reload();
         });
-
     </script>
     
 </body>
