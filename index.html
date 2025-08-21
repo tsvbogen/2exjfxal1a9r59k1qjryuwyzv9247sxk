@@ -89,7 +89,6 @@
         });
 
         startButton.addEventListener('click', () => {
-            audioPlayer.play();
             audioPlayer.pause();
             audioPlayer.currentTime = 0;
 
@@ -101,6 +100,7 @@
 
         videoPlayer.addEventListener('ended', () => {
             location.reload();
+            audioPlayer.play();
         });
 
     </script>
