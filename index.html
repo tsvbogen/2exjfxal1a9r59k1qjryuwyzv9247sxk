@@ -89,6 +89,7 @@
         });
 
         startButton.addEventListener('click', () => {
+            audioPlayer.play();
             audioPlayer.pause();
             audioPlayer.currentTime = 0;
 
@@ -100,7 +101,14 @@
 
         videoPlayer.addEventListener('ended', () => {
             location.reload();
-            audioPlayer.play();
+        });
+
+        window.addEventListener('load', () => {
+            if (document.referrer.includes('ikilledgothviolence.ru')) {
+                setTimeout(() => {
+                    audioPlayer.play();
+                }, 1000);
+            }
         });
 
     </script>
