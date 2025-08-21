@@ -33,7 +33,7 @@
             display: none;
             z-index: 0;
         }
-        #menu {
+        #topMenu {
             position: fixed;
             top: 0;
             left: 0;
@@ -44,7 +44,19 @@
             text-align: center;
             z-index: 10;
         }
-        #menu a {
+        #bottomMenu {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 10;
+        }
+        #topMenu a,
+        #bottomMenu a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
@@ -65,10 +77,14 @@
     </style>
 </head>
 <body>
-    <div id="menu">
+    <div id="topMenu">
         <a href="https://soundcloud.com/gothviolence" target="_blank" rel="noopener noreferrer">i --&-- ii</a>
     </div>
-    
+
+    <div id="bottomMenu">
+        <a href="https://ikilledgothviolence.ru/185iFfPnhV4KAUyEbfsba6g5wIvoxRcA.mp4" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+
     <video id="videoPlayer" playsinline>
         <source src="https://ikilledgothviolence.ru/video/mpzh0sdf6zl6z6axt30pkwdfp6xl252c.mp4" type="video/mp4" />
     </video>
