@@ -86,10 +86,10 @@
 
         window.addEventListener('load', () => {
             audioPlayer.volume = 0.10;
-            audioPlayer.play();
         });
 
         startButton.addEventListener('click', () => {
+            audioPlayer.play();
             audioPlayer.pause();
             audioPlayer.currentTime = 0;
 
